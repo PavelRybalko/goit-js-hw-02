@@ -1,11 +1,11 @@
 const formatString = function (string) {
-  if (string.length > 40) {
-    let lettersEditedArray = string.split("").slice(0, 40);
-    lettersEditedArray.push("...");
-    const editedString = lettersEditedArray.join("");
-    return editedString;
-  }
-  return string;
+	const editedString = string.length > 40 ? string.slice(0, 40)+'...' : string;
+	return editedString;
+  // if (string.length > 40) {
+  //   const editedString = string.slice(0, 40)+'...';
+  //   return editedString;
+  // }
+  // return string;
 };
 
 console.log(formatString("Curbitur ligula sapien, tincidunt non."));
