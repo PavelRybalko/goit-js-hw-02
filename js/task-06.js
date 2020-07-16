@@ -15,7 +15,7 @@ do {
   }
 } while (input !== null);
 
-if (numbers.lenght !== 0) {
+if (numbers.length) {
   for (const number of numbers) {
     total += +number;
   }
