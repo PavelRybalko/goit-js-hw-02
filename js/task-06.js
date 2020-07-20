@@ -5,17 +5,17 @@ let total = 0;
 do {
   input = prompt("Введите число");
 
-  if (input !== null) {
+  if (input !== null && !Number.isNaN(+input)) {
     numbers.push(input);
   }
 
   if (Number.isNaN(+input)) {
     alert("Было введено не число, попробуйте ещё раз");
-    continue;
   }
+
 } while (input !== null);
 
-if (numbers.length) {
+if (numbers.lenght !== 0) {
   for (const number of numbers) {
     total += +number;
   }
